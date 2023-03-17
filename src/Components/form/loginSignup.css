@@ -1,0 +1,12 @@
+#MainContainer {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+
+  /* display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center; */
+  background-color: rgb(231, 231, 231);
+  /* height:100vh; */
+}

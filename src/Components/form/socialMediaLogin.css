@@ -1,0 +1,13 @@
+#orHeading{
+  display:flex;
+  justify-content: center;
+  font-size: 10px;
+  color:gray;
+  margin: 25px;
+}
+#OAuth{
+  font-size: 10px;
+  display:flex;
+  justify-content: space-evenly;
+  color: gray;
+}

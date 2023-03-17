@@ -1,0 +1,19 @@
+.AskSignUpLogin{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:10px;
+  margin:20px;
+  /* background-color: yellow; */
+  
+}
+
+
+.askQn{
+  color:gray;
+  margin: 3px;
+}
+
+.changeForm{
+  color: blue;
+}
