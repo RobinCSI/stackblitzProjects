@@ -1,0 +1,24 @@
+.heading{
+  /* border:1px solid; */
+  margin-left:50px;
+}
+
+.picIntro{
+  display:flex;
+  margin:10px;
+}
+
+#intro{
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.details{
+  display:flex;
+}
+
+.box{
+  background-color: aqua;
+  /* border:1px solid; */
+  margin: 10px;
+}
