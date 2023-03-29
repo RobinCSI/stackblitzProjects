@@ -1,0 +1,13 @@
+.container{
+  /* position:absolute;
+  top:50vh;
+  left:40vw; */
+  height:100vh;
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+}
+.btn{
+  margin-left:10px;
+}
