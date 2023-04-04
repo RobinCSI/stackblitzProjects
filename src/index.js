@@ -1,13 +1,20 @@
 import React, { StrictMode } from 'react';
+import {BrowserRouter} from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
+import {RecoilRoot} from 'recoil'
 
-import App3 from './App3';
+
+import App from './App';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <App3 />
+    <BrowserRouter>
+      <RecoilRoot>
+       <App />
+      </RecoilRoot>
+    </BrowserRouter>
   </StrictMode>
 );
