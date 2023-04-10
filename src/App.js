@@ -8,10 +8,10 @@ import EventLog from './EventLog/EventLog';
 export default function App() {
   return (
     <Fragment>
-      <InputNumTable />
+      {/* <InputNumTable /> */}
       {/* <AppRandomTable /> */}
       {/* <GreetingChange /> */}
-      {/* <EventLog /> */}
+      <EventLog />
     </Fragment>
   );
 }
