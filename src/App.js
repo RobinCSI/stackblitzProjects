@@ -10,8 +10,8 @@ export default function App() {
     <Fragment>
       {/* <InputNumTable /> */}
       {/* <AppRandomTable /> */}
-      {/* <GreetingChange /> */}
-      <EventLog />
+      <GreetingChange />
+      {/* <EventLog /> */}
     </Fragment>
   );
 }
