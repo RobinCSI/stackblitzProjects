@@ -6,7 +6,6 @@ import AppRandomTable from './MultiplicationTable/AppRandomTable';
 
 
 import GreetingChange from './GreetingChange/GreetingChange';
-import App2 from './Greeting';
 import EventLog from './EventLog/EventLog';
 
 
