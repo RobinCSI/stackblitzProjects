@@ -1,13 +1,26 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import App3 from './App3';
+import InputNumTable from './MultiplicationTable/InputNumTable';
+import AppRandomTable from './MultiplicationTable/AppRandomTable';
+
+
+import GreetingChange from './GreetingChange/GreetingChange';
+import App2 from './Greeting';
+import EventLog from './EventLog/EventLog';
+
+
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <App3 />
+    {/* <InputNumTable /> */}
+    {/* <AppRandomTable /> */}
+    {/* <GreetingChange /> */}
+    
+
+    <EventLog />
   </StrictMode>
 );
