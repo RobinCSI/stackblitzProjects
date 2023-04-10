@@ -4,6 +4,6 @@
 }
 
 .htmlElements h1,h2,div{
-  border:1px solid;
-  width: fit-content
+  /* border:1px solid; */
+  width: fit-content;
 }
