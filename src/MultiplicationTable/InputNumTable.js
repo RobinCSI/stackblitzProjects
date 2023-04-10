@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from 'react';
-import './style.css';
 
 export default function InputNumTable() {
   const [num, setNum] = useState();

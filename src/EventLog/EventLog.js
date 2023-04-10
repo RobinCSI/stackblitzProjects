@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from 'react';
 import styles from './EventLog.module.css'
-import './style.css';
 
 export default function EventLog() {
 
