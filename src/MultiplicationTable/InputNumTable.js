@@ -14,7 +14,7 @@ export default function InputNumTable() {
 
   return (
     <Fragment>
-      <input type="text" onChange={assignNum} />
+      <label>Input any number to get its multiplication table: <input type="text" onChange={assignNum} /></label>
       {num && (
         <div>
           <h3>The table for {num} is </h3>

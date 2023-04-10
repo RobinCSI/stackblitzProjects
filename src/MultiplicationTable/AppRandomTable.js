@@ -15,7 +15,7 @@ export default function AppRandomTable() {
 
   return (
     <Fragment>
-      <button onClick={generateNum}>Click to get table for a random number</button>
+      <button onClick={generateNum}>Click to get table for a random number (0-99)</button>
       {num && (
         <div>
           <h3>The table for {num} is </h3>
