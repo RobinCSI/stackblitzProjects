@@ -1,6 +1,7 @@
-table, tbody, tr, td{
+table, th, td {
 
   border:1px solid black;
+  border-spacing: 0px;
 }
 
 

@@ -2,7 +2,7 @@ import React, {Fragment, useState} from 'react'
 // import {uuid} from 'uuid'
 import { v4 as uuid } from 'uuid'
 
-import styles from 'PostTile.module.css'
+import styles from './PostTile.module.css'
 
 
 export default function PostTile(){
@@ -40,7 +40,7 @@ export default function PostTile(){
         </tr>
         </thead>
         <tbody>
-          {postList.map(post=><tr key={uuid()}><td>{post.id}</td><td>{post.userId}</td><td>{post.title}</td><td>{post.body}</td><td onClick={()=>deletePost(post.id)} className={styles.delete}>❌</td></tr>)}
+          {postList.map(post=><tr key={uuid()}><td>{post.id}</td><td>{post.userId}</td><td>{post.title}</td><td>{post.body}</td><td className={styles.delete} onClick={()=>deletePost(post.id)}>❌</td></tr>)}
         </tbody>
     </table>
 
