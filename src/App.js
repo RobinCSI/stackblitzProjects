@@ -1,11 +1,11 @@
 import React from 'react';
 // import './App.css';
-import ImageToggler from './Components/imageToggle/image-toggler';
+import PostTile from './Components/PostTile/PostTile';
 
 export default function App1() {
   return (
     <div>
-      <ImageToggler />
+      <PostTile />
     </div>
   );
 }
