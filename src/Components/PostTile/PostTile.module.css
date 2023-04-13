@@ -1,0 +1,10 @@
+table, tbody, tr, td{
+
+  border:1px solid black;
+}
+
+
+.delete{
+
+  cursor: pointer;
+}
