@@ -14,7 +14,7 @@ export default function ProductInput(){
 
   function inputQty(){
 
-    productsArr.map(prodt=>(prodt.product==value? prodt.productQty+=qty : prodt))
+    products.map(prodt=>(prodt.product==value? prodt.productQty+=qty : prodt))
 
   }
 
@@ -30,7 +30,7 @@ export default function ProductInput(){
       <div className={styles.selectProduct}>
         <label>Select Product</label>
         <DropdownList
-    defaultValue="Select" dataKey="productID" onSelect={alertWhenSelected}
+    defaultValue="Select" dataKey="productID" textField="product" onSelect={alertWhenSelected}
     data={products}
   />
       </div>
