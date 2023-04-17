@@ -6,20 +6,40 @@ import styles from './ProductInput.module.css'
 export default function ProductInput(){
   // const productsArr=[{product: "Sugar", productID: 1, productQty:0}, {product: "Oats", productID: 2, productQty:0}, {product: "Coffee", productID: 3, productQty:0}, {product: "Snacks", productID: 4, productQty:0}]
   const [qty, setQty]=useState(0)
+  const [selected, setSelected]=useState('')
+
   const products=useRef([{product: "Sugar", productID: 1, productQty:0}, {product: "Oats", productID: 2, productQty:0}, {product: "Coffee", productID: 3, productQty:0}, {product: "Snacks", productID: 4, productQty:0}])
 
   function handleSubmit(e){
     e.preventDefault()
-    console.log(e.target)
+    const form=e.target
+    const formData=new FormData(form)
+    console.log([...formData.entries()][0])
+
+    // // Prevent the browser from reloading the page
+    // e.preventDefault();
+    // // Read the form data
+    // const form = e.target;
+    // const formData = new FormData(form);
+    // // You can pass formData as a fetch body directly:
+    // fetch('/some-api', { method: form.method, body: formData });
+    // // You can generate a URL out of it, as the browser does by default:
+    // console.log(new URLSearchParams(formData).toString());
+    // // You can work with it as a plain object.
+    // const formJson = Object.fromEntries(formData.entries());
+    // console.log(formJson); // (!) This doesn't include multiple select values
+    // // Or you can get an array of name-value pairs.
+    // console.log([...formData.entries()]);
     
-  }
+  
 
   }
 
 
   function inputQty(){
 
-    products.current.map(prodt=>(prodt.product==value? setQty(prodt.productQty+qty) : prodt))
+    products.current.map(prodt=>(prodt.product==selected? setQty(prodt.productQty+qty) : prodt))
+    setSelected('')
 
   }
 
@@ -32,7 +52,7 @@ export default function ProductInput(){
   return(
 
     <div className={styles.productInput}>
-      <form onSubmit={handleSubmit}>
+      <form method="post" onSubmit={handleSubmit}>
       <div className={styles.selectProduct}>
       
         <label>Select Product
@@ -49,11 +69,11 @@ export default function ProductInput(){
     data={products.current}
   /> */}
       </div>
-      <div className={styles.selectQty}>
+      {/* <div className={styles.selectQty}>
         <label>Select quantity
         <input type="number" onChange={inputQty} value={qty} />
         </label>
-      </div>
+      </div> */}
       <button type="submit">Add more products</button>
       </form>
     </div>
