@@ -4,11 +4,10 @@ import {createSlice, } from '@reduxjs/toolkit'
 
 
 const initialState={
-  arr= new Array(30)
-  for(let i=1;i<=30;i++){
-    arr[i-1]={ButtonNo: i, count: 0}
-  }
-  value:arr
+  value: (new Array(30)).map((element, index)=>{ButtonNo: index, count: 0})
+  // for(let i=1;i<=30;i++){
+  //   arr[i-1]={ButtonNo: i, count: 0}
+  
 }
 
 export const countSlice=createSlice({
